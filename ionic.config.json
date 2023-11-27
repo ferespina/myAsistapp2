@@ -1,0 +1,7 @@
+{
+  "name": "myAsistapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
