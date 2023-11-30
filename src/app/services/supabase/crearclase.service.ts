@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
 })
 export class crearclaseService {
   private supabase: any ;
-  private autenticado = false; // Variable para rastrear el estado de autenticación
+  private autenticado = false; 
 
   constructor() { 
     this.supabase = createClient(environment.supabaseUrl, environment.supabaseKey);

@@ -21,14 +21,10 @@ ion-card-header {
     color: rgb(242, 208, 15);
   }
 } 
-form{
 ion-input {
   font-size: 25px;
-  width: 350px; 
-  margin: 30px 10px;
-  background: #edd11d;
-  color: #0a37ec;
-}
+  width: 300px; 
+  height: 80px;
 }
 ion-button {
   margin-top: 10px; /* Reduce el espacio entre el texto y los botones */

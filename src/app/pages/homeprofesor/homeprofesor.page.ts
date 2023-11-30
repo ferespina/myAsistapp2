@@ -25,10 +25,9 @@ export class HomeprofesorPage implements OnInit {
   }
 
   cerrarSesion() {
-    // Cambia el estado de autenticación a false
+    
     this.usuarioService.establecerAutenticacion(false);
 
-    // Redirige al usuario a la página de inicio de sesión
     this.router.navigate(['/usertype']);
 
     console.log('Usuario autenticado:', this.usuarioService.estaAutenticado())
