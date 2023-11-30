@@ -6,36 +6,33 @@ ion-content {
   align-items: center;
   justify-content: center;
   height: 100vh; 
-
-  ion-card-header {
-    ion-card-title {
-      --color: #edd11d;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+}
+ion-card-header {
+  ion-card-title {
+    --color: #edd11d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
-
-  ion-input {
-    font-size: 25px;
-    width: 100%; // Ajusta el ancho según tus necesidades
-    margin: 30px 10px;
-    background: #edd11d;
-    color: #0a37ec;
-  }
-
-  ion-button {
-    --background: rgb(246, 223, 11);
-    --background-hover: rgb(11, 31, 246);
-    --background-activated: rgb(11, 31, 246);
-    --background-focused: rgb(11, 31, 246);
-    --color: rgb(26, 10, 246);
-    font-size: 20px;
-    --border-radius: 40px;
-    --ripple-color: white;
-    --padding-top: 10px;
-    --padding-bottom: 10px;
-    margin: 35px;
-    margin-top: 10px;
-    width: 80%; // Ajusta el ancho según tus necesidades
-  }
+}
+ion-input {
+  font-size: 25px;
+  width: 100%; // Ajusta el ancho según tus necesidades
+  margin: 30px 10px;
+  background: #edd11d;
+  color: #0a37ec;
+}
+ion-button {
+  --background: rgb(246, 223, 11);
+  --background-hover: rgb(11, 31, 246);
+  --background-activated: rgb(11, 31, 246);
+  --background-focused: rgb(11, 31, 246);
+  --color: rgb(26, 10, 246);
+  font-size: 20px;
+  --border-radius: 40px;
+  --ripple-color: white;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  margin: 35px;
+  margin-top: 10px;
+  width: 80%; // Ajusta el ancho según tus necesidades
 }
 
