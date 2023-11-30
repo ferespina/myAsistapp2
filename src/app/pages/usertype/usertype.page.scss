@@ -12,19 +12,22 @@ ion-card {
     background-repeat: no-repeat;
     padding: 20px;
   
-    .bienvenido-label {
-      font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
-      margin-bottom: 15px; /* Espaciado entre el texto y los botones */
-      font-weight: bold;
-      color: rgb(242, 208, 15);
-    }
+  }
+  .bienvenido-label {
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+    margin-bottom: 15px; /* Espaciado entre el texto y los botones */
+    font-weight: bold;
+    color: rgb(242, 208, 15);
+  }
+  ion-button {
+    margin-top: 10px; /* Reduce el espacio entre el texto y los botones */
+    background-color: rgb(239, 175, 16);
+    color: #fbfbfb;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 30px;
+    width: 300px;
+    font-size: 1.5rem;
   
-    ion-button {
-      margin-top: 10px; /* Reduje el espacio entre el texto y los botones */
-      --background: rgb(239, 175, 16);
-      --color: #fbfbfb;
-      border-radius: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
   }

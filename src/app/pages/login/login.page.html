@@ -1,11 +1,8 @@
 <ion-content [fullscreen]="true">
-  
   <ion-card class="card_fondo">
     <ion-card-header>
-      <ion-card-title> </ion-card-title>
+      <ion-card-title>bienvenido alumno</ion-card-title>
     </ion-card-header>
-    <p></p>
-    <p></p>
     <ion-card-content>
       <ion-card class="card_form">
         <ion-input
@@ -28,17 +25,8 @@
           maxlength="30"
         ></ion-input>
 
-        <br>
-
-        <ion-button (click)="iniciarSesion()">Ingresar</ion-button>
-
-        <br />
-        <ion-label>
-          ¿Olvidaste tu contraseña?<br>
-          <a (click)="irARegister()">Recuperala.</a>
-        </ion-label>
-
-        <br />
+        <ion-button expand="full" (click)="iniciarSesion()">Ingresar</ion-button>
+        
       </ion-card>
     </ion-card-content>
   </ion-card>
