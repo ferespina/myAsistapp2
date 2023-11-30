@@ -1,44 +1,43 @@
-ion-card {
-  background-image: url('/assets/image/fondotype.png');
-  --color: rgb(239, 205, 16);
-  margin: 0;
-  padding: 10px;
-  height: 100%;
-  border-radius: 0;   
+ion-content {
+  --background: url('/assets/image/fondotype.png') center/cover no-repeat fixed;
+  color: rgb(239, 205, 16);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  ion-card {
+    width: 80%; // Ajusta el ancho del card según tus necesidades
+    border-radius: 10px;
+    margin: 40px;
+  }
+  ion-card-header {
+    ion-card-title {
+      --color: #1d2bed;
+    }
+  }
+
+  .card_form {
+    ion-input {
+      font-size: 15px;
+    }
+
+    ion-button {
+      --background: rgb(246, 223, 11);
+      --background-hover: rgb(11, 31, 246);
+      --background-activated: rgb(11, 31, 246);
+      --background-focused: rgb(11, 31, 246);
+      --color: rgb(26, 10, 246);
+      --border-radius: 40px;
+      --ripple-color: white;
+      --padding-top: 10px;
+      --padding-bottom: 10px;
+      margin-top: 10px;
+    }
+  }
 }
 
-.card_form {
-  border-radius: 5%;
-  padding: 5%;
-  --background-color: rgba(255, 255, 255, 0.973);
-  font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif; 
-  margin: 60px 20px; 
-}
-
-.card_fondo {
-  background-size: 100% auto;
-  background-position: center;
-  color: white;
-}
-
-ion-card-title {
-  --color: #ffffff;
-}
-
-ion-button {
-  --background: rgb(246, 223, 11);
-  --background-hover: rgb(11, 31, 246);
-  --background-activated: rgb(11, 31, 246);
-  --background-focused: rgb(11, 31, 246);
-  --color: rgb(255, 255, 255);
-  border-radius: 40px;
-  --ripple-color: white;
-  --padding-top: 10px;
-  --padding-bottom: 10px;
-}
-
-a {
-  color: white;
+ion-card-header {
+  ion-card-title {
+    --color: #ffffff;
+  }
 }

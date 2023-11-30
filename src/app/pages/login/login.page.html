@@ -1,33 +1,29 @@
 <ion-content [fullscreen]="true">
   <ion-card class="card_fondo">
-    <ion-card-header>
-      <ion-card-title>bienvenido alumno</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
+       <ion-card-header>
+         <ion-card-title>Bienvenido Alumno</ion-card-title>
+       </ion-card-header>
+
       <ion-card class="card_form">
         <ion-input
           type="email"
-          label="Correo Electrónico"
+          label="email alumno"
           labelPlacement="floating"
-          placeholder="Ingresa tu correo electrónico"
+          placeholder="Ingresa email"
           [(ngModel)]="email_alumno" 
           name="email_alumno"
           maxlength="30"
         ></ion-input>
-
         <ion-input
           type="password"
-          label="Contraseña"
+          label="Contraseña alumno"
           labelPlacement="floating"
           placeholder="Ingresa tu contraseña"
           [(ngModel)]="contrasena_alumno" 
           name="contrasena_alumno"
-          maxlength="30"
-        ></ion-input>
-
-        <ion-button expand="full" (click)="iniciarSesion()">Ingresar</ion-button>
-        
-      </ion-card>
-    </ion-card-content>
+          maxlength="30">
+        </ion-input>
+      <ion-button expand="full" (click)="iniciarSesion()">Ingresar</ion-button>       
+    </ion-card>
   </ion-card>
 </ion-content>
