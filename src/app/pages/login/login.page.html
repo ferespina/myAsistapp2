@@ -2,7 +2,7 @@
        <ion-card-header>
          <ion-card-title>Bienvenido Alumno</ion-card-title>
        </ion-card-header>
-      <form (ngSubmit)="iniciarSesion()">
+      <form #loginForm="ngForm" (ngSubmit)="userLogin">
         <ion-input
           type="email"
           label="email alumno"
@@ -12,6 +12,7 @@
           name="email_alumno"
           maxlength="30"
         ></ion-input>
+        
         <ion-input
           type="password"
           label="Contraseña alumno"
