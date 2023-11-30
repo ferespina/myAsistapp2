@@ -3,7 +3,7 @@
   <ion-card-header>
     <ion-card-title>Bienvenido Profesor</ion-card-title>
   </ion-card-header>
-    <form>
+  <form (ngSubmit)="iniciarSesion()">
       <ion-input
         type="email"
         label="email profesor"
@@ -22,6 +22,6 @@
         name="contrasena_profesor"
         maxlength="30">
       </ion-input>
-    </form>  
+  </form>
  <ion-button expand="full" (click)="iniciarSesion()">Ingresar</ion-button>       
 </ion-card>
