@@ -22,7 +22,6 @@ import { error } from 'console';
 
 
 export class HomePage implements OnInit {
-  nombre_asignatura: String = '';
   estado_asistencia: String = '';
   id_alumno: Number = 0;
   registrosAsistencia: any[] = [];
@@ -36,13 +35,12 @@ export class HomePage implements OnInit {
     
 
     async registrarAsistencia() {
-      const asignaturaSeleccionada = this.nombre_asignatura;
       const estadoAsistencia = this.estado_asistencia;
     
       try {
         const response = await this.supabase.from('asistencia').upsert([
           {
-            nombre_asignatura: asignaturaSeleccionada,
+          
             estado_asistencia: estadoAsistencia
           }
         ]);
@@ -72,7 +70,7 @@ export class HomePage implements OnInit {
     this.usuarioService.establecerAutenticacion(false);
 
     // Redirige al usuario a la página de inicio de sesión
-    this.router.navigate(['/login']);
+    this.router.navigate(['/usertype']);
 
     console.log('Usuario autenticado:', this.usuarioService.estaAutenticado())
   }
